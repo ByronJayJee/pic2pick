@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+     content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+  <h1>Click on Image to Select</h1>
+</div>
+
+<button type="button" class="btn btn-primary" onclick="clickPopup()">Open Popup Alert</button>
+
+<!-- ################## -->
+
+<div class="card-columns">
+<button type="button" class="btn" onclick="selectImage(1)">
+  <div class="card">
+    <img id="card-img1" class="card-img-top" src="img/avatar.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="card-title1">Card title that wraps to a new line</h5>
+      <p class="card-text" id="card-text1">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+</button>
+<button type="button" class="btn" onclick="selectImage(2)">
+  <div class="card">
+    <img id="card-img2" class="card-img-top" src="img/avatar.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="card-title2">Card title that wraps to a new line</h5>
+      <p class="card-text" id="card-text2">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+</button>
+<button type="button" class="btn" onclick="selectImage(3)">
+  <div class="card">
+    <img id="card-img3" class="card-img-top" src="img/avatar.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="card-title3">Card title that wraps to a new line</h5>
+      <p class="card-text" id="card-text3">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+</button>
+<button type="button" class="btn" onclick="selectImage(4)">
+  <div class="card">
+    <img id="card-img4" class="card-img-top" src="img/avatar.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" id="card-title4">Card title that wraps to a new line</h5>
+      <p class="card-text" id="card-text4">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+</button>
+</div>
+
+<!-- ################## -->
+
+<script src="js/image_server.js"></script>
+
+</body>
+</html>
