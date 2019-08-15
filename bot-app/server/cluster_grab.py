@@ -18,12 +18,19 @@ df_path_pred = pd.read_csv('kmeans4_resnet50_res.csv')
 ### Add some masks to limit photos ###
 portland_mask = df_path_pred['path'].str.contains('Portland')
 nyc_mask = df_path_pred['path'].str.contains('NYC_NYE')
+
+#mask_df = portland_mask | nyc_mask
+mask_df = portland_mask 
 ######################################
 
-df_path_pred = df_path_pred[(portland_mask) | (nyc_mask)]
+df_path_pred = df_path_pred[mask_df]
 
 print('df_path_pred')
 print(df_path_pred)
+
+
+print("df_path_pred['0_y'].unique()")
+print(df_path_pred['0_y'].unique())
 
 raw_img_types = ['nef', 'dng']
 reg_img_types = ['jpg', 'jpeg', 'png', 'tif', 'tiff']
